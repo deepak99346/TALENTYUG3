@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import logo from "../public/logo.png";
 import footerImg from "../public/fgfdg.png";
 import rectangleImg from "../public/rectangle.png";
@@ -49,7 +50,7 @@ export default function Footer(){
 
           <div className="footer-brand">
             <img src={logo} alt="TalentYug" />
-            <span>TalentYug</span>
+            {/* <span>TalentYug</span> */}
           </div>
 
         </div>

@@ -1,0 +1,102 @@
+.hero {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.hero-grid{
+  display: grid;
+  grid-template-columns: 2fr 420px;
+  gap: 100px;
+  align-items: flex-start; 
+}
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right::before {
+  content: "";
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(64, 123, 220, 0.35),   /* light blue center */
+    rgba(40, 107, 216, 0.15),
+    transparent 90%
+  );
+
+  top: -60px;   /* move upward */
+  left: -80px;  /* move left */
+  right: 80px; /* move right */
+
+  filter: blur(20px); /* soft glow */
+  z-index: 0;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-left h1{
+  font-size: 40px;
+  margin: 0px 0px 40px 0px ;
+}
+
+.lead{
+  /* color: var(--muted); */
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* smooth fade */
+.hero-card img {
+  width: 410px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 28px 28px 28px 0;
+  display: block;
+}
+
+/* dots container */
+.dots {
+  position: absolute;
+  bottom: 16px;              /* place over image bottom */
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 6px;
+  z-index: 2;              /* above image and glow */
+}
+
+/* normal dot */
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;  /* soft white */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* hover effect */
+.dot:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* active dot */
+.dot.active {
+  width: 18px;              /* pill shape like modern sliders */
+  height: 6px;
+  border-radius: 10px;
+  background: white;
+}
+
+

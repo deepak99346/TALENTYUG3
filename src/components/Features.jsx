@@ -1,4 +1,5 @@
 import React from "react";
+import "./Features.css";
 
 import collegeIcon from "../public/Folder.svg";
 import companyIcon from "../public/Stat.png";

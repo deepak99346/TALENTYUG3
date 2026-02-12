@@ -1,4 +1,5 @@
 import React from "react";
+import "./Testimonials.css";
 
 const Feature = ({ number, title, subtitle }) => (
   <div className="feature-card2">
@@ -55,7 +56,8 @@ export default function TestimonialsSection() {
         <Testimonial
           name="Dr. Anil Kumar"
           role="Training & Placement Officer"
-          text="TalentYug brought structure and transparency to our placement process. From company coordination to offer tracking, everything is now centralized and efficient."
+          text="TalentYug brought structure and transparency to our placement process.
+          From company coordination to offer tracking, everything is now centralized and efficient."
           img="/images/anil.jpg"
           color="green"
         />
@@ -63,7 +65,8 @@ export default function TestimonialsSection() {
         <Testimonial
           name="Priya Sharma"
           role="HR Manager"
-          text="Hiring from Tier 2/3 colleges used to be chaotic. TalentYug helped us shortlist better candidates, manage drives smoothly, and close offers faster."
+          text="Hiring from Tier 2/3 colleges used to be chaotic. 
+          TalentYug helped us shortlist better candidates, manage drives smoothly, and close offers faster."
           img="/images/priya.jpg"
           color="orange"
         />
@@ -71,7 +74,8 @@ export default function TestimonialsSection() {
         <Testimonial
           name="Rahul Verma"
           role="Final Year Student (B.Tech)"
-          text="The mock interviews and clear application tracking boosted my confidence. I knew exactly where I stood in every hiring process."
+          text="The mock interviews and clear application tracking boosted my confidence. 
+          I knew exactly where I stood in every hiring process."
           img="/images/rahul.jpg"
           color="blue"
         />

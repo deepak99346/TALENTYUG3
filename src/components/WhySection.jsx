@@ -1,8 +1,13 @@
 import React from 'react'
+import "./WhySection.css";
 import whyImg from '../public/why-infographic.png'
 import collegeIcon from '../public/College_icon.png'
 import companyIcon from '../public/Company_icon.png'
 import studentIcon from '../public/Student_icon.png'
+import college from '../public/college.png'
+import company from '../public/company.png'
+import student from '../public/student.png'
+
 
 export default function WhySection(){
   return (
@@ -12,42 +17,56 @@ export default function WhySection(){
         <p className="why-sub">A Broken System Hurting All Three Stakeholders</p>
 
         <div className="why-cards">
-          <div className="why-card">
-            <div className="card-heading">
-              <img src={collegeIcon} alt="Colleges" className="why-icon" />
-              <h3>Colleges</h3>
-            </div>
-            <ul>
-              <li>Manual Placement Processes</li>
-              <li>Excel & WhatsApp Dependency</li>
-              <li>No Centralized Tracking</li>
-            </ul>
-          </div>
 
-          <div className="why-card">
-            <div className="card-heading">
-              <img src={companyIcon} alt="Companies" className="why-icon" />
-              <h3>Companies</h3>
-            </div>
-            <ul>
-              <li>Limited Hiring Visibility</li>
-              <li>Weak College Coordination</li>
-              <li>Unstructured Candidate Data</li>
-            </ul>
-          </div>
+  {/* Colleges */}
+  <div
+    className="why-card bg-card"
+    style={{ backgroundImage: `url(${college})` }}
+  >
+    <div className="card-heading">
+      <img src={collegeIcon} alt="Colleges" className="why-icon" />
+      <h3>Colleges</h3>
+    </div>
+    <ul>
+      <li>Manual Placement Processes</li>
+      <li>Excel & WhatsApp Dependency</li>
+      <li>No Centralized Tracking</li>
+    </ul>
+  </div>
 
-          <div className="why-card">
-            <div className="card-heading">
-              <img src={studentIcon} alt="Students" className="why-icon" />
-              <h3>Students</h3>
-            </div>
-            <ul>
-              <li>50% Unemployed Post-Graduation</li>
-              <li>No Structured Preparation</li>
-              <li>Missed Opportunities</li>
-            </ul>
-          </div>
-        </div>
+  {/* Companies */}
+  <div
+    className="why-card bg-card"
+    style={{ backgroundImage: `url(${company})` }}
+  >
+    <div className="card-heading">
+      <img src={companyIcon} alt="Companies" className="why-icon" />
+      <h3>Companies</h3>
+    </div>
+    <ul>
+      <li>Limited Hiring Visibility</li>
+      <li>Weak College Coordination</li>
+      <li>Unstructured Candidate Data</li>
+    </ul>
+  </div>
+
+  {/* Students */}
+  <div
+    className="why-card bg-card"
+    style={{ backgroundImage: `url(${student})` }}
+  >
+    <div className="card-heading">
+      <img src={studentIcon} alt="Students" className="why-icon" />
+      <h3>Students</h3>
+    </div>
+    <ul>
+      <li>50% Unemployed Post-Graduation</li>
+      <li>No Structured Preparation</li>
+      <li>Missed Opportunities</li>
+    </ul>
+  </div>
+
+</div>
 
         <div className="why-feature">
           <div className="why-feature-text">
