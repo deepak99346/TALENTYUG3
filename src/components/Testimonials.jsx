@@ -65,19 +65,19 @@ export default function TestimonialsSection() {
             name="Priya Sharma"
             role="HR Manager"
             text="Hiring from Tier 2/3 colleges used to be chaotic. TalentYug helped us shortlist better candidates, manage drives smoothly, and close offers faster."
-            img="/images/priya.jpg"
+            img="https://i.pravatar.cc/150?img=47"
           />
           <Testimonial
             name="Rahul Verma"
             role="Final Year Student (B.Tech)"
             text="The mock interviews and clear application tracking boosted my confidence. I knew exactly where I stood in every hiring process."
-            img="/images/rahul.jpg"
+            img="https://i.pravatar.cc/150?img=52"
           />
           <Testimonial
             name="Dr. Anil Kumar"
             role="Training & Placement Officer"
             text="TalentYug brought structure and transparency to our placement process. From company coordinator to offer tracking, everything is now centralized and efficient."
-            img="/images/anil.jpg"
+            img="https://i.pravatar.cc/150?img=15"
           />
         </div>
       </div>

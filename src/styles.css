@@ -1,7 +1,7 @@
 :root {
   --primary: #2180A8;
   --muted: #6b7b86;
-  --bg: #f6fbfd;
+  --bg: #ffffff;
   --card: #ffffff;
 }
 
@@ -17,7 +17,7 @@ html, body {
 
 body {
   font-family: Inter, Segoe UI, Arial, sans-serif;
-  background: var(--bg);
+  background-color: #ffffff;
   color: #08303b;
 }
 
